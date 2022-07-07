@@ -30,8 +30,15 @@ const getOne = async (req,res) => {
   res.status(200).send(user);
 }
 
+const getActivated = async (req,res) => {
+  let users = await User.findAll({where: { isdeleted: false} });
+  res.status(200).send(users);
+}
 
-
+const getDeactivated = async (req,res) => {
+  let users = await User.findAll({where: { isdeleted: true} });
+  res.status(200).send(users);
+}
 
 // Update user
 const updateUser = async (req,res) => {
@@ -66,5 +73,7 @@ module.exports = {
   updateUser,
   deativateUser,
   ativateUser,
-  getOne
+  getOne,
+  getActivated,
+  getDeactivated
 }

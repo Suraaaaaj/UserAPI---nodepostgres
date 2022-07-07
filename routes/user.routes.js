@@ -7,6 +7,12 @@ router.post('/addUser', userController.addUser);
 // to get all user
 router.get('/allUsers', userController.getAllUsers);
 
+// to get activated user
+router.get('/activated', userController.getActivated);
+
+// to get deactivated
+router.get('/deactivated', userController.getDeactivated);
+
 router.get('/:id', userController.getOne);
 
 // to update user info
