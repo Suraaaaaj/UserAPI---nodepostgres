@@ -23,12 +23,7 @@ app.use('/users', router);
 
 // testing api
 app.get('/',(req,res) => {
-  res.write("<p>API is working...</p>");
-  res.write("<p>http://localhost:8080/users/addUser - To add new user</p>" );
-  res.write("<p>http://localhost:8080/users/allUsers - To get all users</p>");
-  res.write("<p>http://localhost:8080/users/delete/id - To delete the user of particular id.</p>")
-  res.write("<p>http://localhost:8080/users/id - To update the user info</p>");
-  res.send();
+  res.send("Server is running");
 });
 
 // PORT
