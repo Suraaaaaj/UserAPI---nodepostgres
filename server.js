@@ -22,7 +22,7 @@ app.use('/users', router);
 
 
 // testing api
-app.get('/',(req,res) => {
+app.get('/users',(req,res) => {
   res.send("Server is running");
 });
 
