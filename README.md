@@ -1,6 +1,7 @@
 # UserAPI---nodepostgres
 
-This is the User details API built with -  <b> NodeJS, ExpressJS and PostgreSQL </b>
+This is the User details API built with -  <b> NodeJS, ExpressJS and PostgreSQL </b> </br>
+hosted on: <a href="https://users-nodejs-api.herokuapp.com/users/"> https://users-nodejs-api.herokuapp.com/users/</a>
 
 It helps to manage users data.
 
